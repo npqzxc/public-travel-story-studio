@@ -1,0 +1,1 @@
+"""Travel Editor application package."""

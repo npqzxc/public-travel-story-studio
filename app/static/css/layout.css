@@ -1,0 +1,180 @@
+.shell {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  padding: 2rem 1.5rem;
+  background: rgba(19, 35, 28, 0.9);
+  color: #f7fbf6;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.brand p {
+  margin: 0.25rem 0 0;
+  color: rgba(247, 251, 246, 0.72);
+}
+
+.brand-mark {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #7ad2ac, #0f6f56);
+  color: #0e231b;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.nav-links a {
+  color: inherit;
+  padding: 0.7rem 0.85rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.user-chip {
+  margin-top: auto;
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.user-chip strong,
+.user-chip span {
+  display: block;
+}
+
+.user-chip span {
+  color: rgba(247, 251, 246, 0.72);
+  margin-top: 0.25rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-header h2,
+.panel h3 {
+  margin: 0;
+}
+
+.page-header p {
+  margin-bottom: 0;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.metric-grid,
+.card-grid,
+.detail-grid,
+.tickets-layout,
+.form-layout,
+.dashboard-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.metric-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 1rem;
+}
+
+.card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.detail-grid {
+  grid-template-columns: minmax(0, 1.65fr) minmax(320px, 0.9fr);
+  margin-bottom: 1rem;
+}
+
+.tickets-layout,
+.dashboard-layout,
+.form-layout {
+  grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.8fr);
+}
+
+.filter-grid,
+.stack-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.filter-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: end;
+}
+
+.stack-form label,
+.filter-grid label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.9rem 0.4rem;
+  border-bottom: 1px solid rgba(28, 35, 26, 0.08);
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  color: var(--muted);
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 1080px) {
+  .shell,
+  .metric-grid,
+  .card-grid,
+  .detail-grid,
+  .tickets-layout,
+  .dashboard-layout,
+  .form-layout,
+  .filter-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,5 @@
+from .templates.dashboard_page import render_dashboard_page as render_dashboard
+from .templates.login_page import render_login_page as render_login
+from .templates.new_ticket_page import render_new_ticket_page as render_new_ticket
+from .templates.ticket_detail_page import render_ticket_detail_page as render_ticket_detail
+from .templates.tickets_page import render_tickets_page as render_ticket_list

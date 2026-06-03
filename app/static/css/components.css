@@ -1,0 +1,170 @@
+.metric-card,
+.project-card,
+.panel,
+.login-card {
+  background: var(--surface);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: 24px;
+}
+
+.metric-card,
+.project-card,
+.panel {
+  padding: 1.3rem;
+}
+
+.project-header {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.project-header span {
+  color: var(--accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
+.project-footer,
+.muted {
+  color: var(--muted);
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.metric-card span,
+.stat-list span {
+  color: var(--muted);
+}
+
+.metric-card strong {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 2rem;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.85rem;
+  background: rgba(15, 111, 86, 0.08);
+  color: var(--accent);
+}
+
+.priority-urgent {
+  background: rgba(178, 46, 46, 0.12);
+  color: #a32727;
+}
+
+.priority-high {
+  background: rgba(214, 117, 21, 0.14);
+  color: #9f4e05;
+}
+
+.priority-medium {
+  background: rgba(33, 104, 175, 0.12);
+  color: #245f9d;
+}
+
+.priority-low {
+  background: rgba(74, 101, 82, 0.14);
+  color: #44624d;
+}
+
+.badge-done {
+  background: rgba(51, 123, 89, 0.14);
+}
+
+.badge-blocked {
+  background: rgba(163, 39, 39, 0.12);
+  color: #9c2c2c;
+}
+
+.badge-review {
+  background: rgba(168, 113, 24, 0.14);
+  color: #8b641f;
+}
+
+.ticket-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.ticket-body {
+  white-space: pre-wrap;
+  line-height: 1.65;
+}
+
+.comment-card {
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(28, 35, 26, 0.08);
+}
+
+.comment-card + .comment-card {
+  margin-top: 0.75rem;
+}
+
+.comment-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+}
+
+.timeline {
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.timeline li {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.timeline em {
+  color: var(--muted);
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
+.stat-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.insight-card {
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  background: rgba(15, 111, 86, 0.07);
+}
+
+.insight-card strong,
+.insight-card span {
+  display: block;
+}
